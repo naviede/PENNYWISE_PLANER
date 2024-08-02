@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:inputType="textEmailAddress"
-        android:hint="Correo Electronico"
+        android:hint="Usuario"
         android:textColorHint="@color/black"
         android:textSize="22sp"
         android:fontFamily="@font/abeezee"
@@ -59,6 +59,7 @@
         app:layout_constraintTop_toBottomOf="@id/et_Contraseña"
         app:cardCornerRadius="20dp">
         <TextView
+            android:id="@+id/ingresar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="INGRESAR"
@@ -81,6 +82,7 @@
         app:layout_constraintTop_toBottomOf="@id/bt_ingresar"
         app:cardCornerRadius="20dp">
         <TextView
+            android:id="@+id/new_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="NUEVO USUARIO"

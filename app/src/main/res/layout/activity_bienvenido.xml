@@ -33,7 +33,7 @@
                 android:fontFamily="@font/font"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 app:layout_constraintRight_toRightOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
