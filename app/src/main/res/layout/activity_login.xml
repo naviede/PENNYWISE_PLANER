@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9C7DA"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="35dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_Chanchito"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/porquis"
+        app:layout_constraintBottom_toTopOf="@id/et_Email"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/et_Email"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:inputType="textEmailAddress"
+        android:hint="Correo Electronico"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        android:fontFamily="@font/abeezee"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/et_Contraseña"
+        app:layout_constraintTop_toBottomOf="@id/iv_Chanchito"
+        android:layout_marginHorizontal="10dp"/>
+    <EditText
+        android:id="@+id/et_Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:textColorHint="@color/black"
+        android:textSize="22sp"
+        android:fontFamily="@font/abeezee"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/bt_ingresar"
+        app:layout_constraintTop_toBottomOf="@id/et_Email"
+        android:layout_marginHorizontal="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bt_ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:backgroundTint="#8B4444"
+        android:text="INGRESAR"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/bt_nuevo_usuario"
+        app:layout_constraintTop_toBottomOf="@id/et_Contraseña"
+        app:cardCornerRadius="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="INGRESAR"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bt_nuevo_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:backgroundTint="#8B4444"
+        android:text="INGRESAR"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/ll_recu"
+        app:layout_constraintTop_toBottomOf="@id/bt_ingresar"
+        app:cardCornerRadius="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="NUEVO USUARIO"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/ll_recu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_nuevo_usuario">
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:text="Recuperar contraseña,"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv_recuperarContraseña"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="¡Clik aqui!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#002993"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

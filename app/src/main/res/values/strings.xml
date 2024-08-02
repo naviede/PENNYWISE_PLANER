@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PENNYWISE PLANER</string>
+    <string name="gastos"><u>GASTOS</u></string>
+    <string name="ingresos"><u>INGRESOS</u></string>
+</resources>
